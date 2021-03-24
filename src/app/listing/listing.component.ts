@@ -70,7 +70,7 @@ export class ListingComponent implements OnInit {
     this.columnDefs.forEach((ele: any) => {
       if (ele.filter == "agNumberColumnFilter") {
         ele.filterParams = {
-          filterOptions: ['equals', 'greaterThan', 'lessThan',],
+          filterOptions: ['equals', 'greaterThan', 'lessThan'],
           suppressAndOrCondition: true
         }
       } 
@@ -82,7 +82,7 @@ export class ListingComponent implements OnInit {
       }
       else {
         ele.filterParams = {
-          filterOptions: ['equals', 'notEqual', 'contains',],
+          filterOptions: ['contains', 'notEqual','equals'],
           suppressAndOrCondition: true
         }
       }
