@@ -36,14 +36,14 @@ export class ListingComponent implements OnInit {
     { headerName: 'City', width: 80, field: 'city', filter: 'agTextColumnFilter', sortable: true },
     { headerName: 'Suburb', width: 140, field: 'suburb', filter: 'agTextColumnFilter', sortable: true },
     { headerName: 'Address', width: 250, field: 'address', filter: 'agTextColumnFilter', sortable: true },
+        { headerName: 'Unit Number', width: 120, field: 'unitNumber' },
+    { headerName: 'Scheme Name', width: 150, field: 'sectionalSchemeName', filter: 'agTextColumnFilter', sortable: true },
     { headerName: 'No. Of Bedrooms', width: 140, field: 'bedrooms', filter: 'agNumberColumnFilter', sortable: true },
     { headerName: 'No. Of Bathrooms', width: 140, field: 'bathrooms', filter: 'agNumberColumnFilter', sortable: true },
     { headerName: 'Garages', width: 100, field: 'garages', filter: 'agNumberColumnFilter', sortable: true },
     { headerName: 'Car Ports', width: 100, field: 'carPorts', filter: 'agNumberColumnFilter', sortable: true },
     { headerName: 'Floor Size', width: 100, field: 'floorSize', filter: 'agNumberColumnFilter', sortable: true },
     { headerName: 'Land Size', width: 100, field: 'landSize', filter: 'agNumberColumnFilter', sortable: true },
-    { headerName: 'Unit Number', width: 120, field: 'unitNumber' },
-    { headerName: 'Scheme Name', width: 150, field: 'sectionalSchemeName', filter: 'agTextColumnFilter', sortable: true },
     { headerName: 'Status', width: 80, field: 'listingStatus', filter: 'agTextColumnFilter', sortable: true },
   ];
   public rowData: any[];

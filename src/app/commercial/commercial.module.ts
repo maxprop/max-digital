@@ -68,6 +68,10 @@ import { CreateComponent } from './create/create-component';
             loadChildren: './commercial-leads/commercial-leads.module#CommercialLeadsModule'
           },
           {
+            path: 'commercial-brochure',
+            loadChildren: './commercial-brochure/commercial-brochure.module#CommercialBrochureModule'
+          },
+          {
             path: 'commercial-viewings',
             loadChildren: './commercial-viewings/commercial-viewings.module#CommercialViewingsModule'
           }
