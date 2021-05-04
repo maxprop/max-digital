@@ -94,7 +94,7 @@ debugger;
         this.data = [];
         res.forEach(element => {
           debugger;
-          if(element.data.office && element.data.office._id != '60105dec311325c21d5c0799'){
+          if(element.data.office && element.data.office._id == '60105dec311325c21d5c0799'){
             return this.data.push({
               "email": element.data.email?element.data.email:'',
               "mobile": element.data.mobile?element.data.mobile:'',
