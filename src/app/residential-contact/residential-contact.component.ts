@@ -125,7 +125,7 @@ export class ResidentialContactComponent implements OnInit {
   getRowData(startRow: number, endRow: number, sort, filter): Observable<any[]> {
     this.gridParams.api.showLoadingOverlay()
     let headers = new HttpHeaders().set('x-token', 'C7rBtDpCVAXqjx4RPOjD2jpe0Xati6').set('content-type', 'application/json');
-    let searchData:any = 'data.assignedPractitioner.data.office._id__ne=60105dec311325c21d5c0799';
+    let searchData:any = 'data.assignedPractitioner.data.office._id=60105dec311325c21d5c0799';
     let sortData = '-modified';
     let selectFields = 'data.residentials1.data,data.fullName,data.email,data.mobile,data.message,data.source,_id,data.assignedPractitioner.data.office._id';
     let limit = 17;
@@ -234,11 +234,11 @@ export class ResidentialContactComponent implements OnInit {
 
   getTotalRows() {
     if (this.tabType == 'myListing') {
-      var searchData = 'data.assignedPractitioner.data.office._id__ne=60105dec311325c21d5c0799&data.residentials1.data.user.data.email=' + this.email
+      var searchData = 'data.assignedPractitioner.data.office._id=60105dec311325c21d5c0799&data.residentials1.data.user.data.email=' + this.email
     }
 
     if (this.tabType == 'all') {
-      var searchData = 'data.assignedPractitioner.data.office._id__ne=60105dec311325c21d5c0799';
+      var searchData = 'data.assignedPractitioner.data.office._id=60105dec311325c21d5c0799';
     }
     
 
