@@ -208,11 +208,10 @@ export class ResidentialIndexComponent implements OnInit {
           }
         }
       }
-      let params = '?sort=' + sortData + '&skip=' + startRow + '&limit=' + limit 
-      if(this.activeTab === 'active'){
-         params += searchData
+      let params = '?sort=' + sortData + '&skip=' + startRow + '&limit=' + limit + searchData;
+      if (this.activeTab !== 'active') {
+        params = params.replace('&data.listingStatus=all', '');
       }
-      console.log(params)
       resolve(params)
     })
   }
