@@ -8,7 +8,7 @@ import 'ag-grid-enterprise';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine-dark.css';
 
-type tabTypes = 'active' | 'archived' | 'pending' | 'myListing';
+type tabTypes = 'active' | 'archived' | 'pending' | 'myListing'|'all';
 
 @Component({
   selector: 'app-residential-index',
